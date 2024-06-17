@@ -1,46 +1,36 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'These colors are wack',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "These colors are wack",
+    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
-      <>
-        Logo and colors will change whenever you have those finalized. 
-      </>
+      <>Logo and colors will change whenever you have those finalized.</>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        I think the top bar is nice for a navigation type thing.
-      </>
-    ),
+    title: "Focus on What Matters",
+    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    description: <>I think the top bar is nice for a navigation type thing.</>,
   },
   {
-    title: 'These could be recent articles',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        That might be good to have on the home page
-      </>
-    ),
+    title: "These could be recent articles",
+    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    description: <>That might be good to have on the home page</>,
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
