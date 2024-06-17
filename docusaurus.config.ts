@@ -67,14 +67,14 @@ const config: Config = {
               label: "Grab Bag",
               to: "/docs/about",
             },
-            {
-              label: "E-Board",
-              to: "/docs/E-Board",
-            },
-            {
-              label: "Writers",
-              to: "/docs/Writers",
-            },
+            //{
+            //  label: "E-Board",
+            //  to: "/docs/E-Board",
+            //},
+            //{
+            //  label: "Writers",
+            //  to: "/docs/Writers",
+            //},
           ],
         },
       ],
